@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Drink Water</title>
+</head>
+<body>
+    <header class="header">
+        <p class="header-title">Drink Water</p>
+    </header>
+    <main class="main">
+        <article class="main__left-article">
+            <div class="left-article__bar">
+                <div class="bar__fill"></div>
+                <p class="bar__value"><span id="actual_value">0</span>/<span id="need_value">3000</span></p>
+            </div>
+            <img src="../images/sad-water.png" alt="glass-water" id="left-article__img">
+            <h2 class="left-article__title">Double click glass to add 200 ml water</h2>
+        </article>
+        <article class="main__right-article">
+            <section class="right-article__section">
+                <div class="arrows__container-arrow left-arrow">
+                    <span class="arrow-left"></span>
+                </div>
+                <img src="../images/glass-water.png" alt="" id="section__actual-drink-img">
+                    <div class="arrows__container-arrow right-arrow">
+                        <span class="arrow-right"></span>
+                    </div>
+            </section>
+            <section class="right-artricle__drink-inputs">
+                <h2 class="drink-inputs__title">Water</h2>
+                <p class="drink-inputs__hydro">(hydro 100%)</p>
+                <form onsubmit="return false" class="drink-inputs__form">
+                    <input type="number" min="1" max="5000" class="from__input" required><br>
+                    <button class="from__btn">Add</button>
+                </form>
+            </section>
+        </article>
+    </main>
+    <footer class="footer">
+        <p>Created by Maciej Durok. &copy; 2022</p>
+    </footer>
+</body>
+<script src="../scripts/app-script.js"></script>
+
+</html>

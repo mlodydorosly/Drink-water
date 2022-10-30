@@ -1,0 +1,133 @@
+@import "_attributes.scss";
+@import "_reset-style.scss";
+
+body {
+  display: flex;
+  background-color: rgb(253, 253, 253);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: $Main-font-family;
+}
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.screen-welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.screen-welcome__title {
+  font-size: 6em;
+  color: #2bb9f6;
+}
+
+.screen-welcome__btn{
+  margin-top: 2rem;
+}
+.btn {
+  width: 100%;
+  max-width: 150px;
+  padding: 1rem;
+  border-color: #a0e0fb;
+  background: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #2bb9f6;
+  cursor: pointer;
+  transition: background-color 500ms ease-in-out;
+}
+
+.btn:hover {
+  background-color: #e6f5ff;
+}
+
+.start-screen-waterImage {
+  max-width: 175px;
+  position: absolute;
+  bottom: 0;
+}
+
+.screen-form {
+  max-width: 375px;
+  padding: 2.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 30px -5px rgba(146, 146, 146, 1);
+  -moz-box-shadow: 0px 0px 30px -5px rgba(146, 146, 146, 1);
+  box-shadow: 0px 0px 30px -5px rgba(146, 146, 146, 1);
+}
+
+.screen-form__title {
+  font-size: 2rem;
+}
+
+.screen-form__description {
+  margin: 2rem 0;
+  margin-inline: 2rem;
+  color: gray;
+}
+
+#screen-from__input {
+  margin: 1rem 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+#screen-from__input::-webkit-inner-spin-button,
+#screen-from__input::-webkit-outer-spin-button {
+  opacity: 0;
+}
+
+.screen-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  align-self: flex-start;
+}
+#form-btn {
+  padding: 0.5rem;
+}
+
+.visable {
+  display: flex;
+}
+
+.novisable {
+  display: none;
+}
+
+.footer {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 575px) {
+  .screen-welcome__title {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .screen-welcome__title {
+    font-size: 3rem;
+  }
+  .start-screen-waterImage {
+    position: relative;
+    bottom: 0;
+  }
+}

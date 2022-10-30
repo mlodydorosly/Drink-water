@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"); /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  display: flex;
+  background-color: rgb(253, 253, 253);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.screen-welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen-welcome__title {
+  font-size: 6em;
+  color: #2bb9f6;
+}
+
+.screen-welcome__btn {
+  margin-top: 2rem;
+}
+
+.btn {
+  width: 100%;
+  max-width: 150px;
+  padding: 1rem;
+  border-color: #a0e0fb;
+  background: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #2bb9f6;
+  cursor: pointer;
+  transition: background-color 500ms ease-in-out;
+}
+
+.btn:hover {
+  background-color: #e6f5ff;
+}
+
+.start-screen-waterImage {
+  max-width: 175px;
+  position: absolute;
+  bottom: 0;
+}
+
+.screen-form {
+  max-width: 375px;
+  padding: 2.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 0px 30px -5px rgb(146, 146, 146);
+}
+
+.screen-form__title {
+  font-size: 2rem;
+}
+
+.screen-form__description {
+  margin: 2rem 0;
+  margin-inline: 2rem;
+  color: gray;
+}
+
+#screen-from__input {
+  margin: 1rem 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#screen-from__input::-webkit-inner-spin-button,
+#screen-from__input::-webkit-outer-spin-button {
+  opacity: 0;
+}
+
+.screen-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  align-self: flex-start;
+}
+
+#form-btn {
+  padding: 0.5rem;
+}
+
+.visable {
+  display: flex;
+}
+
+.novisable {
+  display: none;
+}
+
+.footer {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 575px) {
+  .screen-welcome__title {
+    font-size: 4.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .screen-welcome__title {
+    font-size: 3rem;
+  }
+  .start-screen-waterImage {
+    position: relative;
+    bottom: 0;
+  }
+}/*# sourceMappingURL=start-page.css.map */

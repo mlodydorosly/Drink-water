@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles/start-page.css">
+   <title>Drink water</title>
+</head>
+
+<body>
+   <main class="start-screen">
+      <article class="screen-welcome visable">
+         <h2 class="screen-welcome__title">Drink&nbsp;water</h2>
+         <button class="screen-welcome__btn btn" id="start-btn">Start</button>
+      </article>
+      <article class="screen-form novisable">
+         <h2 class="screen-form__title">Enter weight</h2>
+         <p class="screen-form__description">To calculate your daily water requirements enter your weight</p>
+         <form action="pages/main.html">
+            <label class="form-label">Kilograms:</label>
+            <input id="screen-from__input" type="number" min="1" max="200" required>
+            <button class="start-screen__btn btn" id="form-btn">Submit</button>
+         </form>
+      </article>
+   </main>
+   <footer class="footer">
+      <img src="images/water.png" alt="" class="start-screen-waterImage">
+   </footer>
+</body>
+<script src="scripts/start-page.js"></script>
+
+</html>
