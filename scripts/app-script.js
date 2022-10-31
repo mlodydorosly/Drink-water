@@ -110,7 +110,7 @@ rightArrow.addEventListener("click", function() {
 });
 
 addValueBtn.addEventListener("click", function() {
-    if (inputValue.value > 0) {
+    if (inputValue.value > 0 && inputValue.value<=5000) {
         let value = (inputValue.value * (drinks[Drink].hydroValue / 100));
         updateWaterValue(value);
     }
